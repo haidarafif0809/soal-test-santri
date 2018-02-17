@@ -4,16 +4,3 @@ Buatlah algoritam linear search, misal saya punya data array ['1','4','2','3','5
 saya ingin mencari angka 3 , ada di index berapa angka 3
 Dan buat juga fungsi untuk mengurutkan angka nya dari yang terbesar ke terkecil dan dari terkecil ke terbesar
  */
-// buat sortir
-echo "<br>";
-$angka = array(1, 2, 5, 6, 9, 8, 3, 4);
-echo "angka sebelum di sortir = ";
-print_r($angka);
-echo "<br>";
-echo "hasilnya adalah :";
-sort($angka);
-// menampilkan jumlah karakter
-$jumlah = count($angka);
-for ($i = 0; $i < $jumlah; $i++) {
-    echo $angka[$i];
-}
