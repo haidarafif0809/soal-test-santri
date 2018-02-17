@@ -13,19 +13,26 @@ contoh tingginya 4 maka hasilnya ketika di jalankan
 
 function jamPasir($angka)
 {
-    $hasil = "x";
-    for ($i = 0; $i < $angka; $i++) {
-        for ($a = $angka; $a > $i; $a--) {
-            echo $hasil;
+    $hasil = "#";
+    $spasi = "&nbsp";
+    for ($i = $angka; $i >= 1; $i--) {
+        for ($a = $i; $a <= $angka; $a++) {
+            echo $spasi;
+        }
+        for ($b = 1; $b <= $i; $b += 1) {
+            echo $spasi . "" . $hasil;
         }
 
         echo "\n";
-
     }
-    for ($i = ($angka - 2); $i >= 0; $i--) {
-        for ($a = $angka; $a > $i; $a--) {
-            echo $hasil;
+    for ($i = 2; $i <= $angka; $i++) {
+        for ($a = $i; $a <= $angka; $a++) {
+            echo $spasi;
         }
+        for ($b = 1; $b <= $i; $b += 1) {
+            echo $spasi . "" . $hasil;
+        }
+
         echo "\n";
     }
 }
