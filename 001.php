@@ -14,50 +14,24 @@ contoh tingginya 4 maka hasilnya ketika di jalankan
 function jamPasir($tinggi_jam)
 {
 
-    $jam_naik = 1;
-
-    for ($a = $tinggi_jam; $a >= 1; $a--):
-        echo "<br>";
-        for ($b = $a; $b <= $tinggi_jam; $b++):
-
-            echo "&nbsp;&nbsp;";
+    for ($k = $tinggi_jam; $k >= 1; $k--):
+        for ($b = $k; $b <= $tinggi_jam; $b++):
+            echo "&nbsp;";
         endfor;
-
-        for ($c = $a; $c >= 1; $c--):
-            echo "#";
-            // echo $c;
+        for ($l = 1; $l <= $k; $l += 1):
+            echo "&nbsp;#";
         endfor;
-
-        for ($d = $a; $d > 1; $d--):
-            echo "#";
-            // echo $d;
-        endfor;
-        $jam_naik++;
+        echo "\n";
     endfor;
 
-    $jam_turun = 1;
-
-    //ambil angka dari satu sampai dg $tinggi_jam {1,2,3,4,5,6,7,8,9}
-    for ($e = 1; $e <= $tinggi_jam; $e++):
-        echo "<br>";
-
-        //kasih spasi
-        for ($f = $e; $f <= $tinggi_jam; $f++):
-
-            echo "&nbsp;&nbsp;";
+    for ($i = 1; $i <= $tinggi_jam; $i++):
+        for ($g = $i; $g <= $tinggi_jam; $g++):
+            echo "&nbsp;";
         endfor;
-        //
-        for ($g = 1; $g <= $jam_turun; $g++):
-            echo "#";
-            // echo $g;
+        for ($j = 1; $j <= $i; $j++):
+            echo "&nbsp;#";
         endfor;
-
-        //
-        for ($h = $jam_turun; $h > 1; $h--):
-            echo "#";
-            // echo $h;
-        endfor;
-        $jam_turun++;
+        echo "\n";
     endfor;
 }
 jamPasir(9);
