@@ -21,7 +21,7 @@ contoh tingginya 4 maka hasilnya ketika di jalankan
 // }
 // jamPasir(4);
 function jamPasir($a){
-	for ($i = 7; $i > 0; $i--) {
+	for ($i = $a; $i > 0; $i--) {
 		for ($j = 1; $j <= $i; $j++) {
 			echo $j;
 		}
@@ -29,5 +29,5 @@ function jamPasir($a){
 	}
 }
 
-jamPasir(7);
+jamPasir(7)
 ?>
