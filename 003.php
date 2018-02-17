@@ -14,5 +14,8 @@ buat fungsi yang akan membuat papan ular tanggal dengan tinggi yang bisa di atur
 
 baris paling bawah yaitu angka satu, harus selalu di mulai dari sebelah kiri
 */
+
+
+
 ?>
 
